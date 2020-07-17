@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var showingMain = false
+    @Environment(\.presentationMode) var mode
     var body: some View {
         NavigationView{
             VStack {
@@ -25,7 +25,7 @@ struct ContentView: View {
                 
                 //登陆按钮
                 Button(action: {
-                    self.showingMain.toggle()
+                    self.mode.wrappedValue.dismiss()
                 }) {
                     Text("LOG IN")
                         .foregroundColor(Color.white)
@@ -37,9 +37,6 @@ struct ContentView: View {
                 
                 //协议和帮助
                 TermsAndProBlem()
-            }
-            .sheet(isPresented: $showingMain){
-                MainView()
             }
         }
     }

@@ -11,6 +11,8 @@
 		327C580524C18B4F0052181D /* TermsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C580424C18B4F0052181D /* TermsView.swift */; };
 		327C580724C18DC70052181D /* ProblemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C580624C18DC70052181D /* ProblemView.swift */; };
 		327C580C24C197CB0052181D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 327C580E24C197CB0052181D /* InfoPlist.strings */; };
+		327C581124C19DA60052181D /* ProblemItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C581024C19DA60052181D /* ProblemItem.swift */; };
+		32A8330424C1CFF1005C813B /* HeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A8330324C1CFF1005C813B /* HeadView.swift */; };
 		32C603E724BFD5AD00B86DE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C603E624BFD5AD00B86DE4 /* AppDelegate.swift */; };
 		32C603E924BFD5AD00B86DE4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C603E824BFD5AD00B86DE4 /* SceneDelegate.swift */; };
 		32C603EB24BFD5AD00B86DE4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C603EA24BFD5AD00B86DE4 /* ContentView.swift */; };
@@ -45,6 +47,8 @@
 		327C580824C197210052181D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		327C580D24C197CB0052181D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		327C580F24C197CD0052181D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		327C581024C19DA60052181D /* ProblemItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemItem.swift; sourceTree = "<group>"; };
+		32A8330324C1CFF1005C813B /* HeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadView.swift; sourceTree = "<group>"; };
 		32C603E324BFD5AD00B86DE4 /* 杰理的日记.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "杰理的日记.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32C603E624BFD5AD00B86DE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32C603E824BFD5AD00B86DE4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,7 +94,7 @@
 		327C580024C15A0B0052181D /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				327C580224C183C60052181D /* MainView.swift */,
+				32A8330124C1CF85005C813B /* Group */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -101,8 +105,25 @@
 				32C603EA24BFD5AD00B86DE4 /* ContentView.swift */,
 				327C580424C18B4F0052181D /* TermsView.swift */,
 				327C580624C18DC70052181D /* ProblemView.swift */,
+				327C581024C19DA60052181D /* ProblemItem.swift */,
 			);
 			path = LogIn;
+			sourceTree = "<group>";
+		};
+		32A8330124C1CF85005C813B /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				327C580224C183C60052181D /* MainView.swift */,
+			);
+			path = Group;
+			sourceTree = "<group>";
+		};
+		32A8330224C1CFA9005C813B /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				32A8330324C1CFF1005C813B /* HeadView.swift */,
+			);
+			path = Info;
 			sourceTree = "<group>";
 		};
 		32C603DA24BFD5AD00B86DE4 = {
@@ -128,6 +149,7 @@
 		32C603E524BFD5AD00B86DE4 /* diary */ = {
 			isa = PBXGroup;
 			children = (
+				32A8330224C1CFA9005C813B /* Info */,
 				327C580124C15A150052181D /* LogIn */,
 				327C580024C15A0B0052181D /* Main */,
 				32C6041624BFD5EF00B86DE4 /* diary.entitlements */,
@@ -304,9 +326,11 @@
 			files = (
 				327C580724C18DC70052181D /* ProblemView.swift in Sources */,
 				327C580324C183C60052181D /* MainView.swift in Sources */,
+				327C581124C19DA60052181D /* ProblemItem.swift in Sources */,
 				32C603E724BFD5AD00B86DE4 /* AppDelegate.swift in Sources */,
 				327C580524C18B4F0052181D /* TermsView.swift in Sources */,
 				32C603E924BFD5AD00B86DE4 /* SceneDelegate.swift in Sources */,
+				32A8330424C1CFF1005C813B /* HeadView.swift in Sources */,
 				32C603EB24BFD5AD00B86DE4 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
