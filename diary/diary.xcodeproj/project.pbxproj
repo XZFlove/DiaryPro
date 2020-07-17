@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		327C580324C183C60052181D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C580224C183C60052181D /* MainView.swift */; };
+		327C580524C18B4F0052181D /* TermsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C580424C18B4F0052181D /* TermsView.swift */; };
+		327C580724C18DC70052181D /* ProblemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C580624C18DC70052181D /* ProblemView.swift */; };
 		32C603E724BFD5AD00B86DE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C603E624BFD5AD00B86DE4 /* AppDelegate.swift */; };
 		32C603E924BFD5AD00B86DE4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C603E824BFD5AD00B86DE4 /* SceneDelegate.swift */; };
 		32C603EB24BFD5AD00B86DE4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C603EA24BFD5AD00B86DE4 /* ContentView.swift */; };
@@ -35,7 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		32C603E324BFD5AD00B86DE4 /* diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = diary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		327C580224C183C60052181D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		327C580424C18B4F0052181D /* TermsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsView.swift; sourceTree = "<group>"; };
+		327C580624C18DC70052181D /* ProblemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemView.swift; sourceTree = "<group>"; };
+		32C603E324BFD5AD00B86DE4 /* 杰理的日记.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "杰理的日记.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32C603E624BFD5AD00B86DE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32C603E824BFD5AD00B86DE4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		32C603EA24BFD5AD00B86DE4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,6 +83,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		327C580024C15A0B0052181D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				327C580224C183C60052181D /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		327C580124C15A150052181D /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				32C603EA24BFD5AD00B86DE4 /* ContentView.swift */,
+				327C580424C18B4F0052181D /* TermsView.swift */,
+				327C580624C18DC70052181D /* ProblemView.swift */,
+			);
+			path = LogIn;
+			sourceTree = "<group>";
+		};
 		32C603DA24BFD5AD00B86DE4 = {
 			isa = PBXGroup;
 			children = (
@@ -90,7 +114,7 @@
 		32C603E424BFD5AD00B86DE4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				32C603E324BFD5AD00B86DE4 /* diary.app */,
+				32C603E324BFD5AD00B86DE4 /* 杰理的日记.app */,
 				32C603F924BFD5AE00B86DE4 /* diaryTests.xctest */,
 				32C6040424BFD5AE00B86DE4 /* diaryUITests.xctest */,
 			);
@@ -100,10 +124,11 @@
 		32C603E524BFD5AD00B86DE4 /* diary */ = {
 			isa = PBXGroup;
 			children = (
+				327C580124C15A150052181D /* LogIn */,
+				327C580024C15A0B0052181D /* Main */,
 				32C6041624BFD5EF00B86DE4 /* diary.entitlements */,
 				32C603E624BFD5AD00B86DE4 /* AppDelegate.swift */,
 				32C603E824BFD5AD00B86DE4 /* SceneDelegate.swift */,
-				32C603EA24BFD5AD00B86DE4 /* ContentView.swift */,
 				32C603EC24BFD5AE00B86DE4 /* Assets.xcassets */,
 				32C603F124BFD5AE00B86DE4 /* LaunchScreen.storyboard */,
 				32C603F424BFD5AE00B86DE4 /* Info.plist */,
@@ -155,7 +180,7 @@
 			);
 			name = diary;
 			productName = diary;
-			productReference = 32C603E324BFD5AD00B86DE4 /* diary.app */;
+			productReference = 32C603E324BFD5AD00B86DE4 /* 杰理的日记.app */;
 			productType = "com.apple.product-type.application";
 		};
 		32C603F824BFD5AE00B86DE4 /* diaryTests */ = {
@@ -270,7 +295,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				327C580724C18DC70052181D /* ProblemView.swift in Sources */,
+				327C580324C183C60052181D /* MainView.swift in Sources */,
 				32C603E724BFD5AD00B86DE4 /* AppDelegate.swift in Sources */,
+				327C580524C18B4F0052181D /* TermsView.swift in Sources */,
 				32C603E924BFD5AD00B86DE4 /* SceneDelegate.swift in Sources */,
 				32C603EB24BFD5AD00B86DE4 /* ContentView.swift in Sources */,
 			);
@@ -449,7 +477,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = xrlmall.diary;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "杰理的日记";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -472,7 +500,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = xrlmall.diary;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "杰理的日记";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
