@@ -72,7 +72,7 @@ struct InputView: View {
 struct TermsAndProBlem: View {
     var body: some View {
         HStack(){
-            NavigationLink(destination: TermsView()) {
+            NavigationLink(destination: TermsView(urlStr: "http://www.xrlmall.top/game_server/textEdit/userAgreement_US.html")) {
                 Text("Terms")
                 .font(Font.system(size: 14))
             }

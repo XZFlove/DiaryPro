@@ -7,10 +7,17 @@
 //
 
 import SwiftUI
+import WebKit
 
-struct TermsView: View {
-    var body: some View {
-        Text("Terms")
+struct TermsView : UIViewRepresentable {
+    var urlStr = "http://www.xrlmall.top"
+    
+    func makeUIView(context: Context) -> WKWebView  {
+        return WKWebView()
+    }
+    func updateUIView(_ uiView: WKWebView, context: Context) {
+        let req = URLRequest(url: URL(string:urlStr)!)
+        uiView.load(req)
     }
 }
 
