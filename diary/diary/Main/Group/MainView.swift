@@ -14,16 +14,34 @@ struct MainView: View {
         NavigationView{
             VStack{
                 List{
-                    NavigationLink(destination: TermsView()) {
-                        ProblemItem(title: "Feedback", subTitle: nil)
+                    Section(header: Text("Online")){
+                        NavigationLink(destination: DiaryList()) {
+                            GroupItem()
+                        }
+                    }
+                    
+                    Section(header: Text("Offline")){
+                        NavigationLink(destination: DiaryList()) {
+                            GroupItem()
+                        }
+                        NavigationLink(destination: DiaryList()) {
+                            GroupItem()
+                        }
+                        NavigationLink(destination: DiaryList()) {
+                            GroupItem()
+                        }
+                        NavigationLink(destination: DiaryList()) {
+                            GroupItem()
+                        }
                     }
                 }
-                .navigationBarTitle(Text("Group"))
+                .listStyle(GroupedListStyle())
+                .navigationBarTitle(Text("Groups"))
                 
                 HStack{
                     
                     Button(action: {}){
-                        Text("New Group")
+                        Text("New")
                     }
                         
                     Spacer()
@@ -32,16 +50,25 @@ struct MainView: View {
                         Image("deflult_avart")
                             .resizable()
                             .renderingMode(.original)
-                            .frame(width:50,height: 50)
-                            .cornerRadius(25)
+                            .frame(width:44,height: 44)
+                            .cornerRadius(22)
                             .shadow(radius: 2)
                     }
+                    .offset(y: -5)
                 }
                 .padding(.horizontal)
+                .frame(height:44)
             }
-        }.sheet(isPresented: $showingLogin, content: {
+            .navigationBarItems(trailing:Button(action:{
+                print("Edit Group")
+            }){
+                Text("Edit")
+            })
+        }
+        .sheet(isPresented: $showingLogin, content: {
             ContentView()
         })
+            
     }
 }
 

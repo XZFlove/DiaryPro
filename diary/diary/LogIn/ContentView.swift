@@ -17,11 +17,10 @@ struct ContentView: View {
                 Text("LOG IN")
                     .font(.largeTitle)
                     .fontWeight(.medium)
-                    .padding(EdgeInsets(top: 30, leading: 0, bottom: 20, trailing: 0))
                 
                 //输入视图
                 InputView()
-                    .padding(EdgeInsets(top: 10, leading: 10, bottom: 30, trailing: 10))
+                    .padding(EdgeInsets(top: 20, leading: 10, bottom: 30, trailing: 10))
                 
                 //登陆按钮
                 Button(action: {
@@ -29,8 +28,8 @@ struct ContentView: View {
                 }) {
                     Text("LOG IN")
                         .foregroundColor(Color.white)
+                        .frame(width: UIScreen.main.bounds.width - 60, height: 40)
                 }
-                    .padding(10)
                     .background(Color.blue)
                 
                 Spacer()
