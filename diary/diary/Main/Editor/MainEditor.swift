@@ -21,6 +21,7 @@ struct MainEditor: View {
 
 //底部工具栏
 struct EditBottomBar: View {
+    @State var showSheet = false
     var body: some View {
         HStack{
             Button(action: {}){
@@ -35,7 +36,7 @@ struct EditBottomBar: View {
             
             Spacer()
             
-            Button(action: {}){
+            Button(action: {self.showSheet.toggle()}){
                 Text("Photo")
             }
             
@@ -54,6 +55,21 @@ struct EditBottomBar: View {
         }
         .frame(height: 44)
         .padding(.horizontal)
+        .actionSheet(isPresented: $showSheet, content: {Photosheet})
+    }
+    
+    private var Photosheet: ActionSheet {
+
+        let action = ActionSheet(title: Text("Add Photo To Diary"),
+                                 message: nil,
+                                 buttons:
+            [.default(Text("Take Photo"), action: {
+                self.showSheet = false
+            }),.default(Text("Photo Library"), action: {
+                self.showSheet = false
+            }),.cancel()])
+        
+        return action
     }
 }
 

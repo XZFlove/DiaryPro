@@ -9,7 +9,6 @@
 import SwiftUI
 
 struct MainView: View {
-    @State var showingLogin = false
     var body: some View {
         NavigationView{
             VStack{
@@ -38,26 +37,7 @@ struct MainView: View {
                 .listStyle(GroupedListStyle())
                 .navigationBarTitle(Text("Groups"))
                 
-                HStack{
-                    
-                    Button(action: {}){
-                        Text("New")
-                    }
-                        
-                    Spacer()
-                    
-                    Button(action:{self.showingLogin.toggle()}){
-                        Image("deflult_avart")
-                            .resizable()
-                            .renderingMode(.original)
-                            .frame(width:44,height: 44)
-                            .cornerRadius(22)
-                            .shadow(radius: 2)
-                    }
-                    .offset(y: -5)
-                }
-                .padding(.horizontal)
-                .frame(height:44)
+                GroupBottomBar()
             }
             .navigationBarItems(trailing:Button(action:{
                 print("Edit Group")
@@ -65,10 +45,36 @@ struct MainView: View {
                 Text("Edit")
             })
         }
+    }
+}
+
+//底部工具栏
+struct GroupBottomBar: View {
+    @State var showingLogin = false
+    var body: some View {
+        HStack{
+            
+            Button(action: {}){
+                Text("New")
+            }
+                
+            Spacer()
+            
+            Button(action:{self.showingLogin.toggle()}){
+                Image("deflult_avart")
+                    .resizable()
+                    .renderingMode(.original)
+                    .frame(width:44,height: 44)
+                    .cornerRadius(22)
+                    .shadow(radius: 2)
+            }
+            .offset(y: -5)
+        }
+        .padding(.horizontal)
+        .frame(height:44)
         .sheet(isPresented: $showingLogin, content: {
             ContentView()
         })
-            
     }
 }
 
