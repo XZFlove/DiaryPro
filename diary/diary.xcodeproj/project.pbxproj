@@ -16,6 +16,7 @@
 		329AC3F124C292570018F339 /* DiaryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329AC3F024C292570018F339 /* DiaryList.swift */; };
 		329AC43524C5941E0018F339 /* MainEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329AC43424C5941E0018F339 /* MainEditor.swift */; };
 		329AC43924C59F500018F339 /* ProblemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329AC43824C59F4F0018F339 /* ProblemDetail.swift */; };
+		329AC43C24C83EE90018F339 /* DiaryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329AC43B24C83EE90018F339 /* DiaryItem.swift */; };
 		32A8330424C1CFF1005C813B /* HeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A8330324C1CFF1005C813B /* HeadView.swift */; };
 		32C603E724BFD5AD00B86DE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C603E624BFD5AD00B86DE4 /* AppDelegate.swift */; };
 		32C603E924BFD5AD00B86DE4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C603E824BFD5AD00B86DE4 /* SceneDelegate.swift */; };
@@ -56,6 +57,7 @@
 		329AC3F024C292570018F339 /* DiaryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryList.swift; sourceTree = "<group>"; };
 		329AC43424C5941E0018F339 /* MainEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainEditor.swift; sourceTree = "<group>"; };
 		329AC43824C59F4F0018F339 /* ProblemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemDetail.swift; sourceTree = "<group>"; };
+		329AC43B24C83EE90018F339 /* DiaryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryItem.swift; sourceTree = "<group>"; };
 		32A8330324C1CFF1005C813B /* HeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadView.swift; sourceTree = "<group>"; };
 		32C603E324BFD5AD00B86DE4 /* 杰理的日记.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "杰理的日记.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32C603E624BFD5AD00B86DE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				329AC3F024C292570018F339 /* DiaryList.swift */,
+				329AC43B24C83EE90018F339 /* DiaryItem.swift */,
 			);
 			path = Diary;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				327C580724C18DC70052181D /* ProblemView.swift in Sources */,
+				329AC43C24C83EE90018F339 /* DiaryItem.swift in Sources */,
 				327C580324C183C60052181D /* MainView.swift in Sources */,
 				329AC43924C59F500018F339 /* ProblemDetail.swift in Sources */,
 				327C581124C19DA60052181D /* ProblemItem.swift in Sources */,

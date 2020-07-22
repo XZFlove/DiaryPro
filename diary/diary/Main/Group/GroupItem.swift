@@ -10,7 +10,14 @@ import SwiftUI
 
 struct GroupItem: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack{
+            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            Spacer()
+            Text("5")
+                .padding(EdgeInsets.init(top: 0, leading: 8, bottom: 0, trailing: 8))
+                .foregroundColor(.gray)
+                .font(.system(size: 14))
+        }
     }
 }
 

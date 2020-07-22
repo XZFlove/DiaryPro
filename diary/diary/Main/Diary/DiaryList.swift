@@ -14,8 +14,17 @@ struct DiaryList: View {
         VStack{
              List{
                NavigationLink(destination: MainEditor()) {
-                   GroupItem()
+                   DiaryItem()
                }
+                NavigationLink(destination: MainEditor()) {
+                    DiaryItem()
+                }
+                NavigationLink(destination: MainEditor()) {
+                    DiaryItem()
+                }
+                NavigationLink(destination: MainEditor()) {
+                    DiaryItem()
+                }
             }.navigationBarTitle(Text("Diarys"))
                 .listStyle(PlainListStyle())
 

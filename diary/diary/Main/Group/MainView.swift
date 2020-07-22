@@ -51,12 +51,15 @@ struct MainView: View {
 //底部工具栏
 struct GroupBottomBar: View {
     @State var showingLogin = false
+    @State var showingAlert = false
     var body: some View {
         HStack{
             
-            Button(action: {}){
+            Button(action: {self.showingAlert.toggle()}){
                 Text("New")
-            }
+            }.alert(isPresented: $showingAlert, content: {
+                Alert(title: Text("New Group"), message: Text("Enter a name for this group"), primaryButton: .default(Text("Save")), secondaryButton: .cancel())
+            })
                 
             Spacer()
             

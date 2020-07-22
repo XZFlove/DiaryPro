@@ -16,6 +16,7 @@ struct MainEditor: View {
             }.listStyle(PlainListStyle())
             EditBottomBar()
         }
+        .navigationBarTitle(Text(""), displayMode: .inline)
     }
 }
 
@@ -68,7 +69,6 @@ struct EditBottomBar: View {
             }),.default(Text("Photo Library"), action: {
                 self.showSheet = false
             }),.cancel()])
-        
         return action
     }
 }
